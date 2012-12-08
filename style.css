@@ -1,0 +1,41 @@
+	#navigation{
+		list-style: none;
+	}			
+
+	#navigation li a {
+		text-decoration: none;
+		font-size: large;
+	}
+
+	#navigationDiv {
+		float: right;
+	}
+
+	.navHeader{
+		font-size: large;
+		font-weight: bold;
+	}
+
+	#contentDiv {
+		float: left;
+		clear: left;
+	}
+
+	body{
+		width: 800px;
+		margin-left:100px;
+		margin-right: 100px;
+		margin-top: 50px;
+	}
+
+	.floatLeft{
+		float: left;
+	}
+
+	.floatRight{
+		float:right;
+	}
+
+	#sloganDiv{
+		/*font-size: x-large;*/
+	}
