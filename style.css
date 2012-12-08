@@ -1,10 +1,12 @@
 	#navigation{
 		list-style: none;
+		width: 100%;
 	}			
 
 	#navigation li a {
 		text-decoration: none;
 		font-size: large;
+		color: black;
 	}
 
 	#navigationDiv {
@@ -16,16 +18,19 @@
 		font-weight: bold;
 	}
 
+	.currentPage{
+		font-weight: bold;
+		text-decoration: none;
+	}
+
 	#contentDiv {
 		float: left;
 		clear: left;
 	}
 
 	body{
-		width: 800px;
-		margin-left:100px;
-		margin-right: 100px;
-		margin-top: 50px;
+		width: 900px;
+		margin: 0 auto;
 	}
 
 	.floatLeft{
@@ -36,6 +41,23 @@
 		float:right;
 	}
 
-	#sloganDiv{
-		/*font-size: x-large;*/
+	.productHeader{
+		font-weight: bold;
+		text-decoration: underline;
+		text-align: center;
+		width: 325px;
+		margin-top:15px;
 	}
+
+	.productDesc{
+		text-align: center;
+		width: 325px;
+	}
+
+	.productCategoryHeader{
+		text-align: center;
+		width: 325px;
+		font-size: x-large;
+		font-weight: bold;
+	}
+
