@@ -39,7 +39,7 @@
 	}
 
 	.floatRight{
-		float:right;
+		float: right;
 	}
 
 	.productHeader{
@@ -77,4 +77,24 @@
 		width: 100px;
 		white-space:  nowrap;
 	}
+
+	.bold{
+		font-weight: bold;
+	}
+
+	.underline{
+		text-decoration: underline;
+	}
+
+	.stolenDebitTextDiv{
+		float: left;
+		margin-left: 15px;
+		width: 500px;
+	}
+
+	#secureCodeTextDiv{
+		width:600px;
+	}
+
+
 
