@@ -1,6 +1,6 @@
 	#navigation{
 		list-style: none;
-		width: 100%;
+		
 	}			
 
 	#navigation li a {
@@ -11,6 +11,7 @@
 
 	#navigationDiv {
 		float: right;
+		width: 200px;
 	}
 
 	.navHeader{
@@ -29,7 +30,7 @@
 	}
 
 	body{
-		width: 900px;
+		width: 1000px;
 		margin: 0 auto;
 	}
 
@@ -63,6 +64,17 @@
 
 	#tabs{
 		font-size: 85%;
-		width: 100%;
+		width: 765px;
+	}
+
+	.staffList thead tr td{
+		white-space: nowrap;
+		width: 100px;
+		font-weight: bold;
+	}
+
+	.staffList tbody tr td{
+		width: 100px;
+		white-space:  nowrap;
 	}
 
