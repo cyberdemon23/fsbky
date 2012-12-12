@@ -96,5 +96,20 @@
 		width:600px;
 	}
 
+	.noticeDiv{
+		clear: both;
+		width: 100%;
+		font-size: 65%;
+		padding-top: 25px;
+	}
+
+	#fundsDiv{
+		margin-top:15px;
+		width: 600px;
+		border: 1px solid black;
+		padding: 15px;
+		font-size: 85%;
+	}
+
 
 
