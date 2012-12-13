@@ -3,15 +3,137 @@
 <head>
 	<title>FSBKY - Current Locations</title>
 	<LINK REL="StyleSheet" HREF="./style.css" TYPE="text/css">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script>
+		$(function() {
+			$( "#accordion" ).accordion();
+		});
+		</script>
 	</head>
 	<body>
 		<div id="headerDiv">		
 			<img src="http://fsbky.com/logos/logowide.gif" alt="First Security Bank of Kentucky Logo"></img>		
 		</div>
 		<div id="contentDiv">
-			<div class="headerText">Current Locations</div>
-			<div id="map_canvas"></div>
-		</div>
+			<h2>Current Locations</h2>		
+			<div id="accordion">
+				<h3>Central City, KY</h3>
+				<div id="centralCity">
+					<h3>Headquarters</h3>
+					<div class="clearBoth">				
+						<div class="floatLeft bold">Central City:</div>
+						<div class="floatRight bold">Opened July 18, 2011</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Physical:</div>
+						<div class="floatRight">110 North First St. Central City, KY 42330</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Mailing:</div>
+						<div class="floatRight">P.O. Box 70 Central City, KY 42330</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Phone Number:</div>
+						<div class="floatRight">(270) 754-2265</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Fax Number:</div>
+						<div class="floatRight">(270) 754-5868</div>				
+					</div>
+					<div class="clearBoth">
+						<div style="margin: auto; text-align:center">Hours of Operation</div>
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft bold">Drive-Through</div>						
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Monday-Thursday</div>
+						<div class="floatRight">8:00 AM - 4:00 PM</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Friday</div>
+						<div class="floatRight">8:00 AM - 5:00 PM</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft bold">Lobby</div>						
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Monday-Thursday</div>
+						<div class="floatRight">9:00 AM - 4:00 PM</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Friday</div>
+						<div class="floatRight">9:00 AM - 5:00 PM</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft bold">ATM</div>
+						<div class="floatRight">24/7</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft bold">Night Deposit</div>
+						<div class="floatRight">Available</div>				
+					</div>
+				</div>					
+				<h3>Greenville, KY</h3>
+				<div id="centralCity">					
+					<div class="clearBoth">				
+						<div class="floatLeft bold">Greenville Office:</div>
+						<div class="floatRight bold">Opened July 19, 2010</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Physical:</div>
+						<div class="floatRight">112 West Depot St. Greenville, KY 42345</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Mailing:</div>
+						<div class="floatRight">P.O. Box 91 Greenville, KY 42345</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Phone Number:</div>
+						<div class="floatRight">(270) 338-2265</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Fax Number:</div>
+						<div class="floatRight">(270) 338-9979</div>				
+					</div>
+					<div class="clearBoth">
+						<div style="margin: auto; text-align:center">Hours of Operation</div>
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft bold">Drive-Through</div>						
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Monday-Thursday</div>
+						<div class="floatRight">8:00 AM - 4:00 PM</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Friday</div>
+						<div class="floatRight">8:00 AM - 5:00 PM</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft bold">Lobby</div>						
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Monday-Thursday</div>
+						<div class="floatRight">9:00 AM - 4:00 PM</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft">Friday</div>
+						<div class="floatRight">9:00 AM - 5:00 PM</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft bold">ATM</div>
+						<div class="floatRight">24/7</div>				
+					</div>
+					<div class="clearBoth">				
+						<div class="floatLeft bold">Night Deposit</div>
+						<div class="floatRight">Available</div>				
+					</div>
+				</div>					
+			</div>
+		</div>		
 		<div id="navigationDiv">
 			<ul id="navigation">
 				<li class="navHeader">Navigation</li>

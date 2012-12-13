@@ -111,5 +111,13 @@
 		font-size: 85%;
 	}
 
+	#accordion{
+		width: 600px;
+	}
+
+	.clearBoth{
+		clear: both;
+	}
+
 
 
