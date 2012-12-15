@@ -4,13 +4,23 @@
 	<title>FSBKY - Privacy Policy</title>
 	<LINK REL="StyleSheet" HREF="./style.css" TYPE="text/css">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$( "#accordion" ).accordion({				
+				 heightStyle: "fill"
+			});
+		});
+	</script>
 </head>
 <body>
 	<div id="headerDiv">		
 		<img src="http://fsbky.com/logos/logowide.gif" alt="First Security Bank of Kentucky Logo"></img>		
 	</div>
-	<div id="contentDiv">
-	Welcome to fsbky.com. (CONTENT HERE)
+	<div id="contentDiv" class="contentWidth">
+		<img src="http://fsbky.com/logos/0014/Image/Privacy_Notice_-_2012_page_1.JPG" alt="FSBKY Privacy Policy Page 1"></img>
+		<img src="http://fsbky.com/logos/0014/Image/Privacy_Notice_-_2012_page_2.JPG" alt="FSBKY Privacy Policy Page 2"></img>				
 	</div>
 	<div id="navigationDiv">
 		<ul id="navigation">
@@ -23,7 +33,7 @@
 			<li><a href="Leadership.html">Leadership</a></li>
 			<li><a href="DialABank.html">Dial-A-Bank</a></li>
 			<li><a href="Holidays.html">Observed Holidays</a></li>
-			<li>Current Specials</li>
+			<li><a href="Specials.html">Current Specials</a></li>
 		</ul>
 		<div id="logosDiv" class="floatRight">
 			<img src="http://fsbky.com/images/fdiclight.gif" alt="FDIC Logo"></img>

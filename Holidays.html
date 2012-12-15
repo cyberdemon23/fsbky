@@ -3,35 +3,107 @@
 <head>
 	<title>FSBKY - Holidays</title>
 	<LINK REL="StyleSheet" HREF="./style.css" TYPE="text/css">
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
-</head>
-<body>
-	<div id="headerDiv">		
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>		
+	</head>
+	<body>
+		<div id="headerDiv">		
 			<img src="http://fsbky.com/logos/logowide.gif" alt="First Security Bank of Kentucky Logo"></img>		
-	</div>
-	<div id="contentDiv">
-	Welcome to fsbky.com. (CONTENT HERE)
-	</div>
-	<div id="navigationDiv">
-		<ul id="navigation">
-			<li class="navHeader">Navigation</li>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="Products.html">Products</a></li>
-			<li><a href="CurrentLocations.html">Current Locations</a></li>
-			<li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
-			<li><a href="Help.html">Lost or Stolen Debit Card</a></li>
-			<li><a href="Leadership.html">Leadership</a></li>
-			<li><a href="DialABank.html">Dial-A-Bank</a></li>
-			<li class="currentPage"><a href="Holidays.html">Observed Holidays</a></li>
-			<li>Current Specials</li>
-		</ul>
-		<div id="logosDiv" class="floatRight">
-			<img src="http://fsbky.com/images/fdiclight.gif" alt="FDIC Logo"></img>
-			<img src="http://fsbky.com/images/ehlenderlight.gif" alt="Equal Housing Lender Logo"></img>
 		</div>
-	</div>	
-	<div class="noticeDiv">
-		NOTICE: The web site of First Security Bank of Kentucky may contain features that are provided to our customers from an outside source. We are not responsible for and have no control over the content or subject matter of these links, however it is our sole intent to provide only good information that our customers can find useful or entertaining. Please contact us with any concerns or comments. The contents of this Web site are for informational and/or authorized customer use. Any unauthorized use of or access to this Web site or it's contents may be punishable by applicable laws. **Note** For consumer complaints pertaining to our bank, you may contact our primary regulator, the Federal Deposit Insurance Corporation (FDIC), at Division of Compliance and Consumer Affairs, 550 17th Street NW, Washington, DC 20429-9990 or call toll-free 800-934-3342. To obtain information pertaining to FDIC deposit insurance coverage you may e-mail the FDIC at Consumer@FDIC.gov, refer to the FDIC website at http://www.fdic.gov, or contact your local FSB office for general deposit insurance information.
-	</div>	
-</body>
-</html>
+		<div id="contentDiv">
+			<div style="contentWidth">				
+				<div id="holidays" class="floatLeft" style="margin-top:15px;">
+					<div id="NewYears1" class="clearBoth holidayRow">
+						<div class="holidayLeft">January 1st</div><div class="holidayLeft">New Year's Day</div>
+					</div>
+					<div id="NewYears2" class="clearBoth holidayRow">
+						<div class="holidayLeft">January 2nd</div><div class="holidayLeft">New Year's Day</div>
+					</div>					
+					<div id="Washington" class="clearBoth holidayRow">
+						<div class="holidayLeft">February 20th</div><div class="holidayLeft">Washington's Birthday</div>
+					</div>
+					<div id="MemorialDay" class="clearBoth holidayRow">
+						<div class="holidayLeft">May 28th</div><div class="holidayLeft">Memorial Day</div>
+					</div>
+					<div id="IndependenceDay" class="clearBoth holidayRow">
+						<div class="holidayLeft">July 4th</div><div class="holidayLeft">Independence Day</div>
+					</div>
+					<div id="LaborDay" class="clearBoth holidayRow">
+						<div class="holidayLeft">September 3rd</div><div class="holidayLeft">Labor Day</div>
+					</div>
+					<div id="ColumbusDay" class="clearBoth holidayRow">
+						<div class="holidayLeft">October 8th</div><div class="holidayLeft">Columbus Day</div>
+					</div>
+					<div id="VeteransDay" class="clearBoth holidayRow">
+						<div class="holidayLeft">November 12th</div><div class="holidayLeft">Veterans Day</div>
+					</div>
+					<div id="Thanksgiving" class="clearBoth holidayRow">
+						<div class="holidayLeft">November 22nd</div><div class="holidayLeft">Thanksgiving Day</div>
+					</div>
+					<div id="Christmas" class="clearBoth holidayRow">
+						<div class="holidayLeft">December 25th</div><div class="holidayLeft">Christmas Day</div>
+					</div>
+				</div>				
+				<div class="floatRight" style="margin-top:25px; margin-left: 15px;">The <span class="bold">bolded</span> holiday is the upcoming or current holiday.</div>				
+			</div>
+		</div>
+		<div id="navigationDiv">
+			<ul id="navigation">
+				<li class="navHeader">Navigation</li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Products.html">Products</a></li>
+				<li><a href="CurrentLocations.html">Current Locations</a></li>
+				<li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+				<li><a href="Help.html">Lost or Stolen Debit Card</a></li>
+				<li><a href="Leadership.html">Leadership</a></li>
+				<li><a href="DialABank.html">Dial-A-Bank</a></li>
+				<li class="currentPage"><a href="Holidays.html">Observed Holidays</a></li>
+				<li><a href="Specials.html">Current Specials</a></li>
+			</ul>
+			<div id="logosDiv" class="floatRight">
+				<img src="http://fsbky.com/images/fdiclight.gif" alt="FDIC Logo"></img>
+				<img src="http://fsbky.com/images/ehlenderlight.gif" alt="Equal Housing Lender Logo"></img>
+			</div>
+		</div>	
+		<div class="noticeDiv">
+			NOTICE: The web site of First Security Bank of Kentucky may contain features that are provided to our customers from an outside source. We are not responsible for and have no control over the content or subject matter of these links, however it is our sole intent to provide only good information that our customers can find useful or entertaining. Please contact us with any concerns or comments. The contents of this Web site are for informational and/or authorized customer use. Any unauthorized use of or access to this Web site or it's contents may be punishable by applicable laws. **Note** For consumer complaints pertaining to our bank, you may contact our primary regulator, the Federal Deposit Insurance Corporation (FDIC), at Division of Compliance and Consumer Affairs, 550 17th Street NW, Washington, DC 20429-9990 or call toll-free 800-934-3342. To obtain information pertaining to FDIC deposit insurance coverage you may e-mail the FDIC at Consumer@FDIC.gov, refer to the FDIC website at http://www.fdic.gov, or contact your local FSB office for general deposit insurance information.
+		</div>	
+		<!--Script to bold current or next holiday-->
+		<script type="text/javascript">
+		$(document).ready(
+			new function(){
+				var holidays = new Array();
+				holidays[0] = {Month:1, Day:1, RowId:'NewYears1'};
+				holidays[1] = {Month:1, Day:2, RowId:'NewYears2'};
+				holidays[2] = {Month:2, Day:20, RowId:'Washington'};
+				holidays[3] = {Month:3, Day:28, RowId:'MemorialDay'};
+				holidays[4] = {Month:7, Day:4, RowId:'IndependenceDay'};
+				holidays[5] = {Month:9, Day:3, RowId:'LaborDay'};
+				holidays[6] = {Month:10, Day:8, RowId:'ColumbusDay'};
+				holidays[7] = {Month:11, Day:12, RowId:'VeteransDay'};
+				holidays[8] = {Month:11, Day:22, RowId:'Thanksgiving'};
+				holidays[9] = {Month:12, Day:25, RowId:'Christmas'};
+
+				var today = new Date();
+
+				//Months are 0 based
+				mm = today.getMonth() + 1;
+				dd = today.getDate();
+
+				var rowId;
+
+				for (var i = 0; i < holidays.length; i++){    
+					if(holidays[i].Month >= mm && holidays[i].Day >= dd){
+						rowId = holidays[i].RowId;
+						break;
+					}        
+				}
+
+				var selector = '#' + rowId;
+
+				$(selector).addClass('bold');
+			});
+		</script>
+	</body>
+	</html>

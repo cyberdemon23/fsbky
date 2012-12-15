@@ -119,5 +119,34 @@
 		clear: both;
 	}
 
+	.contentWidth{
+		width: 600px;
+	}
+
+	.holidayLeft{
+		float: left;
+		width: 150px;
+	}
+
+	.holidayRow{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.factsHeader{
+		background-color: black;
+		color: white;
+		font-weight: bold;
+		margin-left: 5px;
+		margin-right: 10px;
+		margin-top: 5px;
+
+	}
+
+	#accordion-resizer {     
+        height: 800px;
+        width: 600px;
+    }
+
 
 
