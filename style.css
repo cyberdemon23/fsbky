@@ -152,5 +152,11 @@
         width: 600px;
     }
 
+    .mapButton{
+    	margin:5px auto; 
+    	width: 100%;
+    	text-align: center;
+    }
+
 
 
