@@ -2,8 +2,10 @@
 <html html xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 	<title>FSBKY - Home</title>
-	<LINK REL="StyleSheet" HREF="./style.css" TYPE="text/css">
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+	<LINK REL="StyleSheet" HREF="style.css" TYPE="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/smoothness/jquery-ui.css" />
+	<script src="fsbky.js" language="javascript"></script>
 	<meta property="og:title" content="FSBKY" />
 	<meta property="og:type" content="company" />
 	<meta property="og:url" content="http://fsbky.com/" />
@@ -13,19 +15,10 @@
 </head>
 <body>
 	<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div id="fb-root"></div>
-	<div id="headerDiv">		
-		<img src="http://fsbky.com/logos/logowide.gif" alt="First Security Bank of Kentucky Logo"></img>		
-	</div>
-	<div id="contentDiv">
-		Welcome to fsbky.com. (CONTENT HERE)
+	<div id="headerDiv" class="section"></div>
+	<div class="clearBoth"></div>
+	<div id="navigationDiv"></div>
+	<div id="contentDiv" class="section">
 		<div id="serviceLinks">			
 			<a href="https://gateway.fundsxpress.com/FSBKIKY/disclosures/CheckReorder.htm">
 				<img src="http://fsbky.com/logos/0014/Image/Check_Reorder_Logo.bmp"></img>
@@ -42,28 +35,18 @@
 			For more information about temporary FDIC insurance coverage on transaction accounts, visit <a href=""http://www.fdic.gov">http://www.fdic.gov</a>.
 		</div>
 	</div>
-	<div id="navigationDiv">
-		<ul id="navigation">
-			<li class="navHeader">Navigation</li>
-			<li class="currentPage"><a href="index.html">Home</a></li>
-			<li><a href="Products.html">Products</a></li>
-			<li><a href="CurrentLocations.html">Current Locations</a></li>
-			<li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
-			<li><a href="Help.html">Lost or Stolen Debit Card</a></li>
-			<li><a href="Leadership.html">Leadership</a></li>
-			<li><a href="DialABank.html">Dial-A-Bank</a></li>
-			<li><a href="Holidays.html">Observed Holidays</a></li>
-			<li><a href="Specials.html">Current Specials</a></li>
-		</ul>
-		<div id="logosDiv" class="floatRight">
-			<img src="http://fsbky.com/images/fdiclight.gif" alt="FDIC Logo"></img>
-			<img src="http://fsbky.com/images/ehlenderlight.gif" alt="Equal Housing Lender Logo"></img>
-		</div>
-	<fb:like href="https://www.facebook.com/pages/First-Security-Bank-of-KY/227818381053" send="true" layout="button_count" width="150" show_faces="false" font="arial"></fb:like>
-	</div>
-	<div class="noticeDiv">
+	<div class="clearBoth"></div>
+	<div class="noticeDiv section">
 		NOTICE: The web site of First Security Bank of Kentucky may contain features that are provided to our customers from an outside source. We are not responsible for and have no control over the content or subject matter of these links, however it is our sole intent to provide only good information that our customers can find useful or entertaining. Please contact us with any concerns or comments. The contents of this Web site are for informational and/or authorized customer use. Any unauthorized use of or access to this Web site or it's contents may be punishable by applicable laws. **Note** For consumer complaints pertaining to our bank, you may contact our primary regulator, the Federal Deposit Insurance Corporation (FDIC), at Division of Compliance and Consumer Affairs, 550 17th Street NW, Washington, DC 20429-9990 or call toll-free 800-934-3342. To obtain information pertaining to FDIC deposit insurance coverage you may e-mail the FDIC at Consumer@FDIC.gov, refer to the FDIC website at http://www.fdic.gov, or contact your local FSB office for general deposit insurance information.
 	</div>	
 	<div class="fb-like" data-href="https://www.facebook.com/pages/First-Security-Bank-of-KY/227818381053" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	      }(document, 'script', 'facebook-jssdk'));
+	</script>
 </body>
 </html>

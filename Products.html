@@ -2,10 +2,11 @@
 <html>
 <head>
 	<title>FSBKY - Products</title>
-	<LINK REL="StyleSheet" HREF="./style.css" TYPE="text/css">
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/smoothness/jquery-ui.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<LINK REL="StyleSheet" HREF="style.css" TYPE="text/css">
+	<script src="fsbky.js" language="javascript"></script>
     <script>
     $(function() {
         $( "#tabs" ).tabs({height: "fill"});
@@ -13,11 +14,11 @@
     </script>
 	</head>
 	<body>
-		<div id="headerDiv">		
-			<img src="http://fsbky.com/logos/logowide.gif" alt="First Security Bank of Kentucky Logo"></img>		
-		</div>
-		<div id="contentDiv">
-			<div class="headerText">Our Products & Services</div>
+		<div id="fb-root"></div>
+		<div id="headerDiv" class="section"></div>
+		<div class="clearBoth"></div>
+		<div id="navigationDiv"></div>
+		<div id="contentDiv" class="section">
 			<div id="tabs">
 				<ul>
 					<li><a href="#personalChecking">Personal Checking</a></li>
@@ -27,114 +28,97 @@
 					<li><a href="#tabs-4">Additional Products<a></li>
 				</ul>
 				<div id="personalChecking">
-					<div class="productHeader">Hometown Checking</div>
-					<div class="productDesc">
-						<p>$50 to open<br/>
-						Free Debit Card</p>
-					</div>
-					<div class="productHeader">
+					<span class="productHeader">Hometown Checking</span><br/>
+					<span class="productDesc">
+						$50 to open<br/>
+						Free Debit Card
+					</span><br/><br/>
+					<span class="productHeader">
 						Hometown Choice Checking
-					</div>
-					<div class="productDesc">
-						<p>$50 to open<br/>
+					</span><br/>
+					<span class="productDesc">
+						50 to open<br/>
 						2 free boxes of checks per year<br/>
 						$5 monthly service charge<br/>
 						Free debit card<br/>
 						Cash reserve<br/>
-						1 year free rental on small safe deposit box</br></p>
-					</div>
-					<div class="productHeader">
+						1 year free rental on small safe deposit box
+					</span><br/><br/>
+					<span class="productHeader">
 						50 and Better Club
-					</div>
-					<div class="productDesc">
-						<p>$50 to open<br/>
+					</span><br/>
+					<span class="productDesc">
+						$50 to open<br/>
 						Primary owner must be at least 50<br/>
 						Interest-bearing account<br/>
 						Free debit card<br/>
 						Cash reserve<br/>
-						1 year free rental on small safe deposit box</br></p>
-					</div>
-					<div class="productHeader">
+						1 year free rental on small safe deposit box
+					</span><br/><br/>
+					<span class="productHeader">
 						Neighborhood Advantage
-					</div>
-					<div class="productDesc">
-						<p>$100 to open<br/>
+					</span><br/>
+					<span class="productDesc">
+						$100 to open<br/>
 						Interest-bearing account<br/>
 						$5 monthly charges for balances below $1000<br/>
 						Free debit card<br/>
-						Cash reserve<br/></p>
-					</div>
-					<div class="productHeader">
+						Cash reserve
+					</span><br/><br/>
+					<span class="productHeader">
 						FSB Money Market
-					</div>
-					<div class="productDesc">
-						<p>$250 to open</br>
+					</span><br/>
+					<span class="productDesc">
+						$250 to open</br>
 						Interest-bearing account<br/>
 						6 debits per month (3 by check)<br/>
-						$8 monthly charges for balances below $1500<br/></p>
-					</div>
+						$8 monthly charges for balances below $1500<br/>
+					</span>
 				</div>
 				<div id="businessChecking">
-					<div class="productHeader">
+					<span class="productHeader">
 						Business Checking
-					</div>
-					<div class="productDesc">
-						<p>$100 to open<br/>
+					</span><br/>
+					<span class="productDesc">
+						$100 to open<br/>
 						Account Analysis<br/>
-						Free debit card</p>
-					</div>
+						Free debit card
+					</span>
 				</div>
 				<div id="personalSavings">
-					<div class="productHeader">
+					<span class="productHeader">
 						Regular Savings
-					</div>
-					<div class="productDesc">
-						<p>$100 to open<br/>
+					</span><br/>
+					<span class="productDesc">
+						$100 to open<br/>
 						$200 balance require to avoid a $3 charge</br>
 						3 withdrawals per month<br/>
-						Each additional withdrawal $1</p>
-					</div>
-					<div class="productHeader">
+						Each additional withdrawal $1
+					</span><br/><br/>
+					<span class="productHeader">
 						Student Savings
-					</div>
-					<div class="productDesc">
-						<p>$25 to open</br>
+					</span><br/>
+					<span class="productDesc">
+						$25 to open</br>
 						No minimum balance requirement<br/>
-						Primary owner must be under 18</p>
-					</div>
+						Primary owner must be under 18
+					</span>
 				</div>
 				<div id="tabs-4">
 					<div class="productDesc">
-						<p>Loans<br/>
+						Loans<br/>
 						Certificates of Deposit<br/>
 						Individual Retirement Accounts<br/>
 						Christmas Club Savings Accounts<br/>
 						Safe Deposit Box Rentals<br/>
 						Online Banking<br/><br/>
-						*See your local branch for rate information</p>
+						*See your local branch for rate information
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="navigationDiv">
-			<ul id="navigation">
-				<li class="navHeader">Navigation</li>
-				<li><a href="index.html">Home</a></li>
-				<li class="currentPage"><a href="Products.html">Products</a></li>
-				<li><a href="CurrentLocations.html">Current Locations</a></li>
-				<li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
-				<li><a href="Help.html">Lost or Stolen Debit Card</a></li>
-				<li><a href="Leadership.html">Leadership</a></li>
-				<li><a href="DialABank.html">Dial-A-Bank</a></li>
-				<li><a href="Holidays.html">Observed Holidays</a></li>
-				<li><a href="Specials.html">Current Specials</a></li>
-			</ul>
-			<div id="logosDiv" class="floatRight">
-				<img src="http://fsbky.com/images/fdiclight.gif" alt="FDIC Logo"></img>
-				<img src="http://fsbky.com/images/ehlenderlight.gif" alt="Equal Housing Lender Logo"></img>
-			</div>
-		</div>
-		<div class="noticeDiv">
+		<div class="clearBoth"></div>
+		<div class="noticeDiv section">
 			NOTICE: The web site of First Security Bank of Kentucky may contain features that are provided to our customers from an outside source. We are not responsible for and have no control over the content or subject matter of these links, however it is our sole intent to provide only good information that our customers can find useful or entertaining. Please contact us with any concerns or comments. The contents of this Web site are for informational and/or authorized customer use. Any unauthorized use of or access to this Web site or it's contents may be punishable by applicable laws. **Note** For consumer complaints pertaining to our bank, you may contact our primary regulator, the Federal Deposit Insurance Corporation (FDIC), at Division of Compliance and Consumer Affairs, 550 17th Street NW, Washington, DC 20429-9990 or call toll-free 800-934-3342. To obtain information pertaining to FDIC deposit insurance coverage you may e-mail the FDIC at Consumer@FDIC.gov, refer to the FDIC website at http://www.fdic.gov, or contact your local FSB office for general deposit insurance information.
 		</div>		
 	</body>

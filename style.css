@@ -1,26 +1,109 @@
-	body{
+	body, a{
 		font-family: Arial;
+		color:#292963;
+		font-color:#292963;
+		font-size:1em;
+	}
+	
+	body{
+		background-color:#292963;
+	}
+	
+	.ui-state-active a:link, .ui-widget-content{
+		color:#292963;
+	}
+	
+	#tabs{
+		font-size:1em;
+	}
+	
+	.ui-widget-content .ui-state-active{
+		font-weight:bold;
+	}
+	
+	div.section{
+		padding:16px;
+		background-color:#ffffff;
+		border:1px;
+		border-style: solid;
+		border-color:#292963;
+		border-radius:4px;
+	}
+	
+	#headerDiv{
+		margin-top:8px;
+		margin-bottom:8px;
+		height:110px;
+	}
+	
+	#headerDiv > a{
+		float:left;
+		padding-top:12px;
+		margin-bottom:24px;
+		border:0;
+	}
+	
+	img{
+		border:0;
+	}
+	
+	#headerText{
+		float:left;
+		width:53%;
+		text-align: center;
+	}
+
+	#headerText > span{
+		text-shadow: 2px 2px 2px #292963;
+		font-family:serif;
+		color:#292963;
+		vertical-align: top;
+		font-weight: bold;
+	}
+	
+	#headerFSB{
+		font-size:2.75em;
+	}
+	
+	#headerKY{
+		font-size:2.25em;
+	}
+	
+	#headerSloganDiv{
+		font-family:serif;
+		color:#292963;
+		font-weight: bold;
+		font-size:1.5em;
+		font-style:italic;
+		float:right;
+		margin-top:67px;
 	}
 
 	#navigation{
 		list-style: none;
-		
+		padding-left:0px;
+		margin:0px;
 	}			
 
 	#navigation li a {
 		text-decoration: none;
-		font-size: large;
-		color: black;
 	}
 
 	#navigationDiv {
-		float: right;
-		width: 200px;
+		float: left;
+		width:211px;
+	}
+	
+	#navigationDiv > ul{
+		margin:0px;
+	}
+	
+	#logosDiv{
+		margin-top:8px;
+		width:177px;
 	}
 
 	.navHeader{
-		font-size: large;
-		font-weight: bold;
 	}
 
 	.currentPage{
@@ -29,8 +112,9 @@
 	}
 
 	#contentDiv {
+		margin-left:8px;
 		float: left;
-		clear: left;
+		width:747px;
 	}
 
 	body{
@@ -47,39 +131,29 @@
 	}
 
 	.productHeader{
-		font-weight: bold;
 		text-decoration: underline;
-		/*text-align: center;*/
-		width: 325px;
-		/*margin-top:15px;*/
-	}
-
-	.productDesc{
-		/*text-align: center;*/
-		width: 325px;
+		font-weight: bold;
 	}
 
 	.productCategoryHeader{
 		text-align: center;
-		width: 325px;
-		font-size: x-large;
-		font-weight: bold;
 	}
 
 	#tabs{
-		font-size: 85%;
-		width: 765px;
 	}
 
 	.staffList thead tr td{
 		white-space: nowrap;
-		width: 100px;
 		font-weight: bold;
 	}
 
 	.staffList tbody tr td{
-		width: 100px;
 		white-space:  nowrap;
+	}
+	
+	.staffList{
+		font-size: .85em;
+		width:100%;
 	}
 
 	.bold{
@@ -89,47 +163,45 @@
 	.underline{
 		text-decoration: underline;
 	}
+	
+	.ui-widget-content h3{
+		font-size:1.1em;
+		margin-top:12px;
+		margin-bottom:10px;
+	}
+	
+	.ui-tabs .ui-tabs-panel
+	{
+		padding:12px;
+	}
 
 	.stolenDebitTextDiv{
 		float: left;
 		margin-left: 15px;
-		width: 500px;
 	}
 
 	#secureCodeTextDiv{
-		width:600px;
 	}
 
 	.noticeDiv{
 		clear: both;
-		width: 100%;
-		font-size: 65%;
-		padding-top: 25px;
+		margin-top: 8px;
+		font-size:.7em;
 	}
 
 	#fundsDiv{
 		margin-top:15px;
-		width: 600px;
-		border: 1px solid black;
-		padding: 15px;
-		font-size: 85%;
 	}
 
 	#accordion{
-		width: 600px;
 	}
 
 	.clearBoth{
 		clear: both;
 	}
 
-	.contentWidth{
-		width: 600px;
-	}
-
 	.holidayLeft{
 		float: left;
-		width: 150px;
 	}
 
 	.holidayRow{
@@ -140,7 +212,6 @@
 	.factsHeader{
 		background-color: black;
 		color: white;
-		font-weight: bold;
 		margin-left: 5px;
 		margin-right: 10px;
 		margin-top: 5px;
@@ -158,5 +229,13 @@
     	text-align: center;
     }
 
+.ui-widget > div
+{
+	font-size:1em;
+	font-weight:normal;
+}
 
-
+.ui-tabs .ui-tabs-nav li a {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
