@@ -38,7 +38,7 @@
 		position:absolute;
 		width:100%;
 		z-index:-1;
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#292963',GradientType=0 ); /* IE6-9 */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#292963',GradientType=0 ); /* IE6-9 */
 		padding-top: 100px\9; 
 	}
 	
