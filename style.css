@@ -17,12 +17,30 @@
 		border:0;
 	}
 	
-	#outerHeaderDiv{
-		background-image: linear-gradient(bottom, rgb(41,41,99) 0%, rgb(249,249,249) 54%);
-		background-image: -o-linear-gradient(bottom, rgb(41,41,99) 0%, rgb(249,249,249) 54%);
-		background-image: -moz-linear-gradient(bottom, rgb(41,41,99) 0%, rgb(249,249,249) 54%);
-		background-image: -webkit-linear-gradient(bottom, rgb(41,41,99) 0%, rgb(249,249,249) 54%);
-		background-image: -ms-linear-gradient(bottom, rgb(41,41,99) 0%, rgb(249,249,249) 54%);
+	input[type="button"]{
+		padding:8px;
+		cursor:pointer;
+	}
+	
+	#outerHeader{
+		height:200px;
+		position:absolute;
+		width:100%;
+		z-index:-1;
+	}
+	
+	#outerHeaderTop{
+		background-color:#ffffff;
+		height:70px;
+		width:100%;
+	}
+	
+	#outerHeaderBottom{
+		background-image: linear-gradient(bottom, rgb(41,41,99) 0%, rgb(249,249,249) 80%);
+		background-image: -o-linear-gradient(bottom, rgb(41,41,99) 0%, rgb(249,249,249) 80%);
+		background-image: -moz-linear-gradient(bottom, rgb(41,41,99) 0%, rgb(249,249,249) 80%);
+		background-image: -webkit-linear-gradient(bottom, rgb(41,41,99) 0%, rgb(249,249,249) 80%);
+		background-image: -ms-linear-gradient(bottom, rgb(41,41,99) 0%, rgb(249,249,249) 80%);
 		
 		background-image: -webkit-gradient(
 			linear,
@@ -34,12 +52,10 @@
 		background-repeat: no-repeat;
 		
 		background-color:#f9f9f9;
-		height:200px;
-		position:absolute;
+		height:100px;
 		width:100%;
 		z-index:-1;
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#292963',GradientType=0 ); /* IE6-9 */
-		padding-top: 100px\9; 
 	}
 	
 	.ui-state-active a:link, .ui-widget-content{
@@ -95,6 +111,8 @@
 		float:left;
 		width:53%;
 		text-align: center;
+		zoom:1;
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135,Color='#292963');
 	}
 
 	#headerText > span{
@@ -260,9 +278,10 @@
 		float: left;
 	}
 
-	.holidayRow{
-		padding-top: 10px;
-		padding-bottom: 10px;
+	#holidays > table > tbody > tr > td{
+		padding-right:32px;
+		padding-top:8px;
+		padding-bottom:8px;
 	}
 
 	.factsHeader{
@@ -289,4 +308,32 @@
 {
 	font-size:1em;
 	font-weight:normal;
+}
+
+.ui-tabs .ui-tabs-nav li a{
+	padding-left:.9em;
+	padding-right:.9em;
+}
+
+#homeTopContainer{
+	height:130px;
+}
+
+.homeTop{
+	padding-right:10px;
+	padding-left:10px;
+	font-weight:bold;
+	border-right-style: solid;
+	border-right-width:1px;
+	border-color:#AAAAAA;
+	height:100%;
+}
+
+.homeTopLeft{
+	padding-left:0px;
+}
+
+.homeTopRight{
+	padding-right:0px;
+	padding-left:10px;
 }

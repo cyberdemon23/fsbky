@@ -10,45 +10,60 @@
 	</head>
 	<body>
 		<div id="fb-root"></div>
-		<div id="outerHeaderDiv">&nbsp;</div>
+		<div id="outerHeader">
+			<div id="outerHeaderTop"></div>
+			<div id="outerHeaderBottom"></div>
+		</div>
 		<div id="headerDiv"></div>
 		<div class="clearBoth"></div>
 		<div id="bodyDiv">
 		<div id="navigationDiv"></div>
 		<div id="contentDiv" class="section">			
 				<div id="holidays" class="floatLeft">
-					<div id="NewYears1" class="clearBoth holidayRow">
-						<div class="holidayLeft">January 1st</div><div class="holidayLeft">New Year's Day</div>
-					</div>
-					<div id="NewYears2" class="clearBoth holidayRow">
-						<div class="holidayLeft">January 2nd</div><div class="holidayLeft">New Year's Day</div>
-					</div>					
-					<div id="Washington" class="clearBoth holidayRow">
-						<div class="holidayLeft">February 20th</div><div class="holidayLeft">Washington's Birthday</div>
-					</div>
-					<div id="MemorialDay" class="clearBoth holidayRow">
-						<div class="holidayLeft">May 28th</div><div class="holidayLeft">Memorial Day</div>
-					</div>
-					<div id="IndependenceDay" class="clearBoth holidayRow">
-						<div class="holidayLeft">July 4th</div><div class="holidayLeft">Independence Day</div>
-					</div>
-					<div id="LaborDay" class="clearBoth holidayRow">
-						<div class="holidayLeft">September 3rd</div><div class="holidayLeft">Labor Day</div>
-					</div>
-					<div id="ColumbusDay" class="clearBoth holidayRow">
-						<div class="holidayLeft">October 8th</div><div class="holidayLeft">Columbus Day</div>
-					</div>
-					<div id="VeteransDay" class="clearBoth holidayRow">
-						<div class="holidayLeft">November 12th</div><div class="holidayLeft">Veterans Day</div>
-					</div>
-					<div id="Thanksgiving" class="clearBoth holidayRow">
-						<div class="holidayLeft">November 22nd</div><div class="holidayLeft">Thanksgiving Day</div>
-					</div>
-					<div id="Christmas" class="clearBoth holidayRow">
-						<div class="holidayLeft">December 25th</div><div class="holidayLeft">Christmas Day</div>
-					</div>
+					<table>
+						<tr id="NewYears1">
+							<td>January 1st</td>
+							<td>New Year's Day</td>
+						</tr>
+						<tr id="NewYears2">
+							<td>January 2nd</td>
+							<td>New Year's Day</td>
+						</tr>
+						<tr id="Washington">
+							<td>February 18th</td>
+							<td>Washington's Birthday</td>
+						</tr>
+						<tr id="MemorialDay">
+							<td>May 27th</td>
+							<td>Memorial Day</td>
+						</tr>
+						<tr id="IndependenceDay">
+							<td>July 4th</td>
+							<td>Independence Day</td>
+						</tr>
+						<tr id="LaborDay">
+							<td>September 2nd</td>
+							<td>Labor Day</td>
+						</tr>
+						<tr id="ColumbusDay">
+							<td>October 14th</td>
+							<td>Columbus Day</td>
+						</tr>
+						<tr id="VeteransDay">
+							<td>November 11th</td>
+							<td>Veterans Day</td>
+						</tr>
+						<tr id="Thanksgiving">
+							<td>November 28th</td>
+							<td>Thanksgiving Day</td>
+						</tr>
+						<tr id="Christmas">
+							<td>December 25th</td>
+							<td>Christmas Day</td>
+						</tr>
+					</table>
 				</div>				
-				<div class="floatRight" style="margin-top:25px; margin-left: 15px;">The <span class="bold">bolded</span> holiday is the upcoming or current holiday.</div>				
+				<div class="floatRight" style="padding-top:8px;">The <span class="bold">bolded</span> holiday is the upcoming or current holiday.</div>				
 		</div>
 		<div id="noticeSpace" class="clearBoth"></div>
 		<div id="noticeDiv" class="section"></div>
@@ -60,13 +75,13 @@
 				var holidays = new Array();
 				holidays[0] = {Month:1, Day:1, RowId:'NewYears1'};
 				holidays[1] = {Month:1, Day:2, RowId:'NewYears2'};
-				holidays[2] = {Month:2, Day:20, RowId:'Washington'};
-				holidays[3] = {Month:3, Day:28, RowId:'MemorialDay'};
+				holidays[2] = {Month:2, Day:18, RowId:'Washington'};
+				holidays[3] = {Month:5, Day:27, RowId:'MemorialDay'};
 				holidays[4] = {Month:7, Day:4, RowId:'IndependenceDay'};
-				holidays[5] = {Month:9, Day:3, RowId:'LaborDay'};
-				holidays[6] = {Month:10, Day:8, RowId:'ColumbusDay'};
-				holidays[7] = {Month:11, Day:12, RowId:'VeteransDay'};
-				holidays[8] = {Month:11, Day:22, RowId:'Thanksgiving'};
+				holidays[5] = {Month:9, Day:2, RowId:'LaborDay'};
+				holidays[6] = {Month:10, Day:14, RowId:'ColumbusDay'};
+				holidays[7] = {Month:11, Day:11, RowId:'VeteransDay'};
+				holidays[8] = {Month:11, Day:28, RowId:'Thanksgiving'};
 				holidays[9] = {Month:12, Day:25, RowId:'Christmas'};
 
 				var today = new Date();
@@ -83,7 +98,11 @@
 						break;
 					}        
 				}
-
+				
+				if(holidays[holidays.length-1].Month == mm && holidays[holidays.length-1].Day < dd){
+					rowId = holidays[0].RowId;
+				}
+				
 				var selector = '#' + rowId;
 
 				$(selector).addClass('bold');

@@ -15,20 +15,47 @@
 </head>
 <body>
 	<div id="fb-root"></div>
-	<div id="outerHeaderDiv">&nbsp;</div>
+	<div id="outerHeader">
+		<div id="outerHeaderTop"></div>
+		<div id="outerHeaderBottom"></div>
+	</div>
 	<div id="headerDiv"></div>
 	<div class="clearBoth"></div>
 	<div id="bodyDiv">
 		<div id="navigationDiv"></div>
 		<div id="contentDiv" class="section">
-			<div id="serviceLinks">			
-				<a href="https://gateway.fundsxpress.com/FSBKIKY/disclosures/CheckReorder.htm">
-					<img src="http://fsbky.com/logos/0014/Image/Check_Reorder_Logo.bmp"></img>
-				</a>								
-				<a href="http://fsbky.com/calculators.htm">
-					<img src="http://fsbky.com/logos/0014/Image/financialcals.jpg"></img>
-				</a>
+			<div id="homeTopContainer">
+				<div class="floatLeft homeTop homeTopLeft">
+					<a href="https://gateway.fundsxpress.com/FSBKIKY/disclosures/CheckReorder.htm">
+						Reorder Checks<br>and buy<br>accessories
+					</a>
+				</div>
+				<div class="floatLeft homeTop">
+					<a href="http://fsbky.com/calculators.htm">
+						Financial<br>Calculators
+					</a>
+				</div>
+				<div class="floatLeft homeTop">
+					<table border="0" cellspacing="0" cellpadding="0" width="200" bgcolor="#ffffff" align="center" height="130">
+						<tbody>
+						    <tr>
+							<td height="25" colspan="5"><a onclick="return linkCheck(this);" href="https://gateway.fundsxpress.com/FSBKIKY/security_stmt.htm" target="_blank"><img border="0" alt="Online Banking" src="/logos/0014/Image/onlinebanking_header.gif" width="200" height="25"></a></td>
+						    </tr>
+						    <tr>
+							<td class="signin" height="78" colspan="3"><iframe height="100" src="https://secure.fundsxpress.com/start/FSBKIKY/custom_login?template=new&amp;no_top_url=1" frameborder="0" width="180" scrolling="no"></iframe></td>
+						    </tr>
+						    <tr height="16" valign="top" bgcolor="#ffffff">
+							<td height="16" colspan="5"><img alt="" align="top" src="/logos/0014/Image/onlinebanking_footer2.gif" width="200" height="16"></td>
+						    </tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="floatLeft bold homeTopRight">
+					E-Statment Retrieval<br>
+					<iframe height="90" width="271" scrolling="no" id="loginFrame" src="https://fsbky.securemsg.com/loginsmall.cfm?newWindow=1" frameborder="0"></iframe>
+				</div>
 			</div>
+			<div class="clearBoth"></div>
 			<div id="fundsDiv">
 				All funds in a "non-interest bearing transaction account" are insured by the Federal Deposit Insurance Corporation (FDIC) from December 31, 2010 through December 31, 2012.  This temporary unlimited coverage is in addition to and seperate from the coverage of at least $250,000 available to depositors under the FDIC's general deposit rules.<br/><br/>
 	
@@ -41,7 +68,8 @@
 		<div id="noticeDiv" class="section"></div>
 		<div class="fb-like" data-href="https://www.facebook.com/pages/First-Security-Bank-of-KY/227818381053" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
 	</div>
-	<script>(function(d, s, id) {
+	<script>
+		(function(d, s, id) {
 		var js, fjs = d.getElementsByTagName(s)[0];
 		if (d.getElementById(id)) return;
 		js = d.createElement(s); js.id = id;
