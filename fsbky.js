@@ -37,4 +37,8 @@ function setSelectedNavItem(){
     else if(document.URL.indexOf("Specials.html") > -1){
         $('#navSpecials').addClass('selectedNavItem');
     }
+    else{
+           $('#navHome').addClass('selectedNavItem');
+    }
+
 }
