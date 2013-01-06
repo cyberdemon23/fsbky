@@ -341,3 +341,15 @@
 .fb_ltr{
 	margin-top: 5px;
 }
+
+#creditsDiv{
+	color: white;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: .8em;
+}
+
+#creditsDiv > p > a{
+	color: white;
+}

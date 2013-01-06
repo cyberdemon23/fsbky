@@ -4,6 +4,7 @@ $(document).ready(function() {
         setSelectedNavItem();;
       });
     $('#noticeDiv').load('Notice.html');
+    $('#creditsDiv').load('credits.html');
     if($("#tabs").length > 0){
         $( "#tabs" ).tabs();
     }
