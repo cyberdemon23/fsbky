@@ -93,10 +93,17 @@
 				var rowId;
 
 				for (var i = 0; i < holidays.length; i++){    
-					if(holidays[i].Month >= mm && holidays[i].Day >= dd){
+					if(holidays[i].Month == mm){
+						if(holidays[i].Day >= dd){
+							rowId = holidays[i].RowId;
+							break;
+						}        
+					}
+
+					if(holidays[i].Month > mm){
 						rowId = holidays[i].RowId;
 						break;
-					}        
+					}
 				}
 				
 				if(holidays[holidays.length-1].Month == mm && holidays[holidays.length-1].Day < dd){
